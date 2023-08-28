@@ -16,9 +16,7 @@ Want to quickly get started building your own project with [Prismic][prismic] an
 To start a new project using this starter, run the following commands in your terminal:
 
 ```sh
-npx degit prismicio-community/sveltekit-starter-prismic-minimal your-project-name
-cd your-project-name
-npx @slicemachine/init@latest
+npx @slicemachine/init@latest --starter sveltekit-starter-prismic-minimal
 ```
 
 The commands will do the following:
