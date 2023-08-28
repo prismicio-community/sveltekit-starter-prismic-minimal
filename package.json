@@ -3,7 +3,8 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
+		"dev": "concurrently \"npm:vite:dev\" \"npm:slicemachine\" --prefix-colors blue,magenta",
+		"vite:dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
@@ -16,6 +17,7 @@
 		"@slicemachine/adapter-sveltekit": "^0.3.10-dev-next-release.2",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
+		"concurrently": "^8.2.1",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.30.0",
@@ -30,6 +32,6 @@
 	"type": "module",
 	"dependencies": {
 		"@prismicio/client": "^7.2.0",
-		"@prismicio/svelte": "^0.1.0"
+		"@prismicio/svelte": "^0.1.1"
 	}
 }
