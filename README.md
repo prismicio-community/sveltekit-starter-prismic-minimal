@@ -61,11 +61,11 @@ There are two steps to rendering content from Prismic in your SvelteKit project:
 
 Here are some of the files in your project that you can edit:
 
-- `prismicio.js` - This file includes configuration for `@prismicio/client` and exports useful API helpers.
-- `app/layout.js` - This is your layout component.
-- `app/page.js` - This is the app homepage. It queries and renders a page document with the UID (unique identifier) "home" from the Prismic API.
-- `app/[uid]/page.js` - This is the page component, which queries and renders a page document from your Prismic repository based on the UID.
-- `slices/*/index.js` - Each Slice in your project has an index.js file that renders the Slice component. Edit this file to customize your Slices.
+- `src/lib/prismicio.js` - This file includes configuration for `@prismicio/client` and exports useful API helpers.
+- `src/routes/+layout.svelte` - This is your layout component.
+- `src/routes/+page.svelte` - This is the app homepage. It queries and renders a page document with the UID (unique identifier) "home" from the Prismic API.
+- `src/routes/[uid]/+page.svelte` - This is the page component, which queries and renders a page document from your Prismic repository based on the UID.
+- `src/lib/slices/*/index.svelte` - Each Slice in your project has an `index.svelte` file that renders the Slice component. Edit this file to customize your Slices.
 
 These are important files that you should leave as-is:
 
