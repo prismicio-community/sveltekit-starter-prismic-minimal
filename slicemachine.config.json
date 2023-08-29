@@ -1,5 +1,5 @@
 {
-	"repositoryName": "starter-prismic-minimal",
+	"repositoryName": "sveltekit-starter-prismic-minimal",
 	"adapter": "@slicemachine/adapter-sveltekit",
 	"libraries": ["./src/lib/slices"],
 	"localSliceSimulatorURL": "http://localhost:5173/slice-simulator"
