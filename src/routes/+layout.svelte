@@ -12,6 +12,7 @@
 	{/if}
 	{#if $page.data.meta_image}
 		<meta name="og:image" content={$page.data.meta_image.url} />
+		<meta name="twitter:card" content="summary_large_image" />
 	{/if}
 </svelte:head>
 <main>
