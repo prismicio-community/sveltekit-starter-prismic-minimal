@@ -14,25 +14,25 @@
 		"slicemachine": "start-slicemachine"
 	},
 	"devDependencies": {
-		"@slicemachine/adapter-sveltekit": "^0.3.13",
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.20.4",
+		"@slicemachine/adapter-sveltekit": "^0.3.21",
+		"@sveltejs/adapter-auto": "^2.1.0",
+		"@sveltejs/kit": "^1.25.2",
 		"concurrently": "^8.2.1",
-		"eslint": "^8.28.0",
+		"eslint": "^8.51.0",
 		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte": "^2.30.0",
+		"eslint-plugin-svelte": "^2.34.0",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.10.1",
-		"slice-machine-ui": "^1.11.0",
-		"svelte": "^4.0.5",
-		"svelte-check": "^3.4.3",
-		"typescript": "^5.0.0",
-		"typescript-svelte-plugin": "^0.3.31",
-		"vite": "^4.4.2"
+		"slice-machine-ui": "^1.18.0",
+		"svelte": "^4.2.1",
+		"svelte-check": "^3.5.2",
+		"typescript": "^5.2.2",
+		"typescript-svelte-plugin": "^0.3.34",
+		"vite": "^4.4.11"
 	},
 	"type": "module",
 	"dependencies": {
-		"@prismicio/client": "^7.2.0",
-		"@prismicio/svelte": "^0.1.2"
+		"@prismicio/client": "^7.3.1",
+		"@prismicio/svelte": "^1.0.2"
 	}
 }

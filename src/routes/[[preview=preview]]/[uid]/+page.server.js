@@ -2,10 +2,8 @@ import { asText } from '@prismicio/client';
 
 import { createClient } from '$lib/prismicio';
 
-export const prerender = true;
-
-export async function load({ params, fetch }) {
-	const client = createClient({ fetch });
+export async function load({ params, fetch, cookies }) {
+	const client = createClient({ fetch, cookies });
 
 	const page = await client.getByUID('page', params.uid);
 
@@ -24,6 +22,6 @@ export async function entries() {
 	const pages = await client.getAllByType('page');
 
 	return pages.map((page) => {
-		return { uid: page.uid };
+		return { preview: undefined, uid: page.uid };
 	});
 }
