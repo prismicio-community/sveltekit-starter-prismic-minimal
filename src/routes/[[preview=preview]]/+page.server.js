@@ -15,3 +15,7 @@ export async function load({ fetch, cookies }) {
 		meta_image: page.data.meta_image.url
 	};
 }
+
+export function entries() {
+	return [{}];
+}

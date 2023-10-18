@@ -22,6 +22,6 @@ export async function entries() {
 	const pages = await client.getAllByType('page');
 
 	return pages.map((page) => {
-		return { preview: undefined, uid: page.uid };
+		return { uid: page.uid };
 	});
 }
