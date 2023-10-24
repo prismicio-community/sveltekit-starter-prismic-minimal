@@ -1,4 +1,5 @@
 import * as prismic from '@prismicio/client';
+import { enableAutoPreviews } from '@prismicio/svelte/kit';
 import config from '../../slicemachine.config.json';
 
 /**
@@ -30,13 +31,15 @@ const routes = [
  * Creates a Prismic client for the project's repository. The client is used to
  * query content from the Prismic API.
  *
- * @param {prismic.ClientConfig} config - Configuration for the Prismic client.
+ * @param {import('@prismicio/svelte/kit').CreateClientConfig} config - Configuration for the Prismic client.
  */
-export const createClient = (config = {}) => {
+export const createClient = ({ cookies, ...config } = {}) => {
 	const client = prismic.createClient(repositoryName, {
 		routes,
 		...config
 	});
+
+	enableAutoPreviews({ client, cookies });
 
 	return client;
 };

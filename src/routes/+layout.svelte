@@ -1,5 +1,7 @@
 <script>
+	import { PrismicPreview } from '@prismicio/svelte/kit';
 	import { page } from '$app/stores';
+	import { repositoryName } from '$lib/prismicio';
 </script>
 
 <svelte:head>
@@ -18,3 +20,4 @@
 <main>
 	<slot />
 </main>
+<PrismicPreview {repositoryName} />
