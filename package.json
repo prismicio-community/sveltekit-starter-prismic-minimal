@@ -14,25 +14,26 @@
 		"slicemachine": "start-slicemachine"
 	},
 	"devDependencies": {
-		"@slicemachine/adapter-sveltekit": "^0.3.21",
-		"@sveltejs/adapter-auto": "^2.1.0",
-		"@sveltejs/kit": "^1.27.1",
+		"@slicemachine/adapter-sveltekit": "^0.3.30",
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
 		"concurrently": "^8.2.2",
-		"eslint": "^8.52.0",
-		"eslint-config-prettier": "^9.0.0",
-		"eslint-plugin-svelte": "^2.34.0",
-		"prettier": "^3.0.3",
-		"prettier-plugin-svelte": "^3.0.3",
-		"slice-machine-ui": "^1.18.0",
-		"svelte": "^4.2.2",
-		"svelte-check": "^3.5.2",
-		"typescript": "^5.2.2",
-		"typescript-svelte-plugin": "^0.3.34",
-		"vite": "^4.5.0"
+		"eslint": "^8.55.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.35.1",
+		"prettier": "^3.1.1",
+		"prettier-plugin-svelte": "^3.1.2",
+		"slice-machine-ui": "^1.22.0",
+		"svelte": "^4.2.8",
+		"svelte-check": "^3.6.2",
+		"typescript": "^5.3.3",
+		"typescript-svelte-plugin": "^0.3.36",
+		"vite": "^5.0.9",
+		"@sveltejs/vite-plugin-svelte": "^3.0.0"
 	},
 	"type": "module",
 	"dependencies": {
 		"@prismicio/client": "^7.3.1",
-		"@prismicio/svelte": "^1.0.2"
+		"@prismicio/svelte": "^1.0.3"
 	}
 }
