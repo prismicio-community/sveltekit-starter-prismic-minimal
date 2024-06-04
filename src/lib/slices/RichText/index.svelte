@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
+	import type { Content } from '@prismicio/client';
 	import { PrismicRichText } from '@prismicio/svelte';
 	import Label from './Label.svelte';
 
-	/** @type {import("@prismicio/client").Content.RichTextSlice} */
-	export let slice;
+	export let slice: Content.RichTextSlice;
 </script>
 
 <section class="container">
