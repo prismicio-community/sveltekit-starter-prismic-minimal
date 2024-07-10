@@ -45,7 +45,7 @@ Your new page will be accessible by its URL, but it won't appear on the website 
 
 ### Customize this website
 
-This website is preconfigured with Prismic. It has three Prismic packages installed:
+This website is preconfigured with Prismic. It has two Prismic packages installed:
 
 - `@prismicio/client` provides helpers for fetching content from Prismic
 - `@prismicio/svelte` provides Svelte components for rendering content from Prismic
@@ -63,8 +63,8 @@ Here are some of the files in your project that you can edit:
 
 - `src/lib/prismicio.ts` - This file includes configuration for `@prismicio/client` and exports useful API helpers.
 - `src/routes/+layout.svelte` - This is your layout component.
-- `src/routes/+page.svelte` - This is the app homepage. It queries and renders a page document with the UID (unique identifier) "home" from the Prismic API.
-- `src/routes/[uid]/+page.svelte` - This is the page component, which queries and renders a page document from your Prismic repository based on the UID.
+- `src/routes/[[preview=preview]]/+page.svelte` - This is the app homepage. It queries and renders a page document with the UID (unique identifier) "home" from the Prismic API.
+- `src/routes/[[preview=preview]]/[uid]/+page.svelte` - This is the page component, which queries and renders a page document from your Prismic repository based on the UID.
 - `src/lib/slices/*/index.svelte` - Each Slice in your project has an `index.svelte` file that renders the Slice component. Edit this file to customize your Slices.
 
 These are important files that you should leave as-is:
@@ -72,15 +72,15 @@ These are important files that you should leave as-is:
 - `src/routes/slice-simulator/+page.svelte` - Do not edit or delete this file. This file simulates your Slice components in development.
 - `src/lib/slices/` - This directory contains Slice components, which are generated programmatically by Slice Machine. To customize a Slice template, you can edit the Slice's `index.svelte` file. To add Slices, delete Slices, or edit Slice models, use Slice Machine (more info below).
 
-Learn more about how to edit your components with [Fetch Data in SvelteKit](https://prismic.io/docs/technologies/fetch-data-sveltekit) and [Template Content in SvelteKit](https://prismic.io/docs/technologies/template-content-sveltekit).
+Learn more about how to edit your components with [Fetch Data in SvelteKit](https://prismic.io/docs/svelte-fetch-data) and [Template Content in SvelteKit](https://prismic.io/docs/svelte-template).
 
 ### Deploy to the web
 
-To put your project online, see [Deploy your SvelteKit App](https://prismic.io/docs/technologies/deploy-sveltekit).
+To put your project online, see [Deploy your SvelteKit App](https://prismic.io/docs/svelte-deploy).
 
 ### Edit content models with Slice Machine
 
-This project includes an application called Slice Machine, which generates models for your Custom Types and Slices. Slice Machine stores the models locally in your codebase, so you can save and version them. It also syncs your models to Prismic. To learn how to use Slice Machine, read [Model Content in SvelteKit](https://prismic.io/docs/technologies/model-content-sveltekit).
+This project includes an application called Slice Machine, which generates models for your Custom Types and Slices. Slice Machine stores the models locally in your codebase, so you can save and version them. It also syncs your models to Prismic. To learn how to use Slice Machine, read [Model Content in SvelteKit](https://prismic.io/docs/content-modeling).
 
 If you change or add to your Custom Types, you'll need to update your route handling to match. To learn how to do that, read [Define Paths in SvelteKit](https://prismic.io/docs/technologies/define-paths-sveltekit).
 
@@ -107,7 +107,7 @@ limitations under the License.
 ```
 
 [prismic]: https://prismic.io/
-[prismic-docs]: https://prismic.io/docs/technologies/sveltekit
+[prismic-docs]: https://prismic.io/docs/svelte
 [prismic-sign-up]: https://prismic.io/dashboard/signup
 [sveltekit]: https://kit.svelte.dev/
 [live-demo]: https://sveltekit-starter-prismic-minimal.vercel.app/
