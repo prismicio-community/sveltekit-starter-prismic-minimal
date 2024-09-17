@@ -37,7 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@prismicio/client": "^7.5.0",
+		"@prismicio/client": "^7.9.0",
 		"@prismicio/svelte": "^1.2.0"
 	}
 }
