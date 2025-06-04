@@ -1,9 +1,11 @@
 <script lang="ts">
 	import type { Content } from '@prismicio/client';
-	import { PrismicRichText } from '@prismicio/svelte';
+	import { PrismicRichText, type SliceComponentProps } from '@prismicio/svelte';
 	import Label from './Label.svelte';
 
-	export let slice: Content.RichTextSlice;
+	type Props = SliceComponentProps<Content.RichTextSlice>;
+
+	const { slice }: Props = $props();
 </script>
 
 <section class="container">
@@ -19,7 +21,8 @@
 	.container {
 		max-width: 600px;
 		margin: 6em auto;
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+		font-family:
+			-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
 			'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 	}
 </style>
