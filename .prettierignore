@@ -2,3 +2,13 @@
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
+
+# Generated and managed by the Prismic CLI
+prismicio-types.d.ts
+customtypes
+src/lib/slices/index.ts
+src/lib/slices/**/model.json
+src/lib/slices/**/mocks.json
+
+# Sample content documents
+documents

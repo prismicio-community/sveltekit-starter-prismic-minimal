@@ -13,17 +13,12 @@ Want to quickly get started building your own project with [Prismic][prismic] an
 
 ## 🚀 Quick Start
 
-To start a new project using this starter, run the following commands in your terminal:
+To start a new project using this starter:
 
-```sh
-npx @slicemachine/init@latest --starter sveltekit-starter-prismic-minimal
-```
-
-The commands will do the following:
-
-1. Start a new SvelteKit project using this starter.
-2. Ask you to log in to Prismic or [create an account][prismic-sign-up].
-3. Create a new Prismic content repository with sample content.
+1. Visit <https://prismic.io/dashboard>.
+2. Create a new Prismic repository by selecting **SvelteKit**.
+3. Select the **Minimal starter**.
+4. Fill out your repository details and continue with the steps given in Prismic.
 
 When you're ready to start your project, run the following command:
 
@@ -70,7 +65,7 @@ Here are some of the files in your project that you can edit:
 These are important files that you should leave as-is:
 
 - `src/routes/slice-simulator/+page.svelte` - Do not edit or delete this file. This file simulates your Slice components in development.
-- `src/lib/slices/` - This directory contains Slice components, which are generated programmatically by Slice Machine. To customize a Slice template, you can edit the Slice's `index.svelte` file. To add Slices, delete Slices, or edit Slice models, use Slice Machine (more info below).
+- `src/lib/slices/` - This directory contains Slice components, whose models are managed in the Prismic Type Builder. To customize a Slice template, you can edit the Slice's `index.svelte` file. To add Slices, delete Slices, or edit Slice models, use the Type Builder (more info below).
 
 Learn more about how to edit your components with [Fetch Data in SvelteKit](https://prismic.io/docs/svelte-fetch-data) and [Template Content in SvelteKit](https://prismic.io/docs/svelte-template).
 
@@ -78,11 +73,11 @@ Learn more about how to edit your components with [Fetch Data in SvelteKit](http
 
 To put your project online, see [Deploy your SvelteKit App](https://prismic.io/docs/svelte-deploy).
 
-### Edit content models with Slice Machine
+### Edit content models with the Type Builder
 
-This project includes an application called Slice Machine, which generates models for your Custom Types and Slices. Slice Machine stores the models locally in your codebase, so you can save and version them. It also syncs your models to Prismic. To learn how to use Slice Machine, read [Model Content in SvelteKit](https://prismic.io/docs/content-modeling).
+This project's content models for your Custom Types and Slices are managed in the Prismic Type Builder, in your Prismic dashboard. To pull the latest models into your codebase, run `npx prismic sync`. To learn how to model your content, read [Model Content in SvelteKit](https://prismic.io/docs/content-modeling).
 
-If you change or add to your Custom Types, you'll need to update your route handling to match. To learn how to do that, read [Define Paths in SvelteKit](https://prismic.io/docs/technologies/define-paths-sveltekit).
+If you change or add to your Custom Types, you'll need to update your route handling to match. Routes are defined in `prismic.config.json`. To learn how to do that, read [Define Paths in SvelteKit](https://prismic.io/docs/technologies/define-paths-sveltekit).
 
 ## Documentation
 
