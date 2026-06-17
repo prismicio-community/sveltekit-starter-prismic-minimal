@@ -75,7 +75,7 @@ To put your project online, see [Deploy your SvelteKit App](https://prismic.io/d
 
 ### Edit content models with the Type Builder
 
-This project's content models for your Custom Types and Slices are managed in the Prismic Type Builder, in your Prismic dashboard. To pull the latest models into your codebase, run `npx prismic sync`. To learn how to model your content, read [Model Content in SvelteKit](https://prismic.io/docs/content-modeling).
+This project's content models for your Custom Types and Slices are managed in the Prismic Type Builder, in your Prismic dashboard. To pull the latest models into your codebase, run `npx prismic pull`. To learn how to model your content, read [Model Content in SvelteKit](https://prismic.io/docs/content-modeling).
 
 If you change or add to your Custom Types, you'll need to update your route handling to match. Routes are defined in `prismic.config.json`. To learn how to do that, read [Define Paths in SvelteKit](https://prismic.io/docs/technologies/define-paths-sveltekit).
 
