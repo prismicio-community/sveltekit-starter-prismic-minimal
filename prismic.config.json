@@ -1,0 +1,15 @@
+{
+	"repositoryName": "sveltekit-starter-prismic-minimal",
+	"libraries": ["./src/lib/slices"],
+	"routes": [
+		{
+			"type": "page",
+			"path": "/",
+			"uid": "home"
+		},
+		{
+			"type": "page",
+			"path": "/:uid"
+		}
+	]
+}

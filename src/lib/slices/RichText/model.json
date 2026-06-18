@@ -1,29 +1,31 @@
 {
-	"id": "rich_text",
-	"type": "SharedSlice",
-	"name": "RichText",
-	"description": "RichText",
-	"variations": [
-		{
-			"id": "default",
-			"name": "Default",
-			"docURL": "...",
-			"version": "sktwi1xtmkfgx8626",
-			"description": "RichText",
-			"primary": {
-				"content": {
-					"type": "StructuredText",
-					"config": {
-						"label": "Content",
-						"placeholder": "Lorem ipsum...",
-						"allowTargetBlank": true,
-						"multi": "paragraph,preformatted,heading1,heading2,heading3,strong,em,hyperlink,embed,list-item",
-						"labels": ["codespan"]
-					}
-				}
-			},
-			"items": {},
-			"imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
-		}
-	]
+  "id": "rich_text",
+  "type": "SharedSlice",
+  "name": "RichText",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "description": "RichText",
+      "imageUrl": "https://images.prismic.io/sveltekit-starter-prismic-minimal/shared-slices/rich_text/default/fc97eff58c566c70d7769ebe2b6c3e7267d734b3.png?auto=compress%2Cformat",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "primary": {
+        "content": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Content",
+            "placeholder": "Lorem ipsum...",
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,strong,em,hyperlink,embed,list-item",
+            "labels": [
+              "codespan"
+            ],
+            "allowTargetBlank": true
+          }
+        }
+      },
+      "items": {}
+    }
+  ],
+  "description": "RichText"
 }
